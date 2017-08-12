@@ -88,6 +88,32 @@
 											<?php _e( 'Yes', 'svg-support' ); ?><br /><small class="description"><?php _e(' Checking this will make sure that either the default class or the custom one you set below is inserted into the style attributes of <code>img</code> tags when you insert SVG images. Additionally, it will remove all of the default WordPress classes. It will leave normal image types as default and only affect SVG files.', 'svg-support' ); ?></small>
 										</td>
 									</tr>
+									<!-- MODIFIED // Theuns Coetzee (ipokkel) 2017-08-10 // Added power override option -->
+									<tr valign="top" class="svgs-advanced">
+										<!-- Automatically insert class to target in images on page via custom jquery -->
+										<th scope="row">
+											<label for="bodhi_svgs_settings[power_override]"><strong><?php _e( 'Power Override: Add class to all SVG\'s?', 'svg-support' ); ?></strong></label>
+										</th>
+										<td>
+											<?php printf(
+												'<input id="bodhi_svgs_settings[power_override]" name="bodhi_svgs_settings[power_override]" type="checkbox" %2$s />', 'bodhi_svgs_settings_power_override', checked( isset( $bodhi_svgs_options['power_override'] ), true, false ) ); ?>
+											<?php _e( 'Yes', 'svg-support' ); ?><br /><small class="description"><?php _e(' Checking this will automatically (only) add the SVG class to all image tags containing a SVG in the rendered HTML via javascript. Use with caution.  **Use case scenario: When using a visual builder, e.g. Divi or Divi Builder, when the class is not automatically added with the "Automatically insert class?" option selected or the builder module does not give you the option to manually add a css class to your image.', 'svg-support' ); ?></small>
+										</td>
+									</tr>
+									<!-- END MODIFIED -->
+									<!-- MODIFIED // Theuns Coetzee (ipokkel) 2017-08-11 // Added select js option -->
+									<tr valign="top" class="svgs-advanced">
+										<!-- Select whether to use minified or expanded javascript file  -->
+										<th scope="row">
+											<label for="bodhi_svgs_settings[use_expanded_js]"><strong><?php _e( 'Expanded JS:', 'svg-support' ); ?></strong></label>
+										</th>
+										<td>
+											<?php printf(
+												'<input id="bodhi_svgs_settings[use_expanded_js]" name="bodhi_svgs_settings[use_expanded_js]" type="checkbox" %2$s />', 'bodhi_svgs_settings_use_expanded_js', checked( isset( $bodhi_svgs_options['use_expanded_js'] ), true, false ) ); ?>
+											<?php _e( 'Yes', 'svg-support' ); ?><br /><small class="description"><?php _e(' Checking this will use the expanded javascript file instead of the minified js file.', 'svg-support' ); ?></small>
+										</td>
+									</tr>
+									<!-- END MODIFIED -->
 
 									<tr valign="top" class="svgs-advanced">
 										<!-- Custom CSS target field so users can set their own class to target -->
@@ -158,6 +184,17 @@
 							<p><?php _e( 'Now that you\'ve set up SVG Support on your site, it\'s time to look at optimizing your existing images (jpg & png).', 'svg-support' ); ?></p>
 							<p><?php _e( 'ShortPixel improves website performance by reducing the size of your images. The results are no different in quality from the original, plus your originals are stored in a backup folder for you.', 'svg-support' ); ?></p>
 							<p><a class="shortpixel-button button-primary" href="https://shortpixel.com/h/af/OLKMLXE207471"><?php _e( 'Try ShortPixel WordPress Plugin for FREE', 'svg-support' ); ?></a></p>
+						</div> <!-- .inside -->
+					</div> <!-- .postbox -->
+
+					<!-- MODIFIED // Theuns Coetzee (ipokkel) 2017-08-11 // Added metabox with links to animate and compress SVG -->
+					<div class="postbox">
+						<h3><span><?php _e( 'Animate and Optimize SVG\'s', 'svg-support' ); ?></span></h3>
+						<div class="inside">
+							<p><a href="https://maxwellito.github.io/vivus-instant/" target="_blank">Vivus Instant for animation</a></p>
+							<p><?php _e( 'Here you can upload your svg document and use the tools provided to animate strokes.', 'svg-support' ); ?></p>
+							<p><a href="https://jakearchibald.github.io/svgomg/" target="_blank">SVGOMG for svg optimisation</a></p>
+							<p><?php _e( 'An online tool to optimise a svg document', 'svg-support' ); ?></p>
 						</div> <!-- .inside -->
 					</div> <!-- .postbox -->
 
