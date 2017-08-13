@@ -9,7 +9,7 @@ This is a modified version of the [**SVG Support**](https://wordpress.org/plugin
 
 This serves as reference and possible solution for those experience similar challenges and is not the stable plugin available in the wordpress repository but a mimicked version thereof.
 
-*The testing environment was WP 4.8 with a Divi Child theme (Divi v3.3.66 as parent theme), I have not tested it with other themes or versions of Wordpress so therefore the challenges and/or issues mentioned is considered for this specific environment ONLY.*
+*The testing environment was WP 4.8 with a Divi Child theme (Divi v3.0.66 as parent theme), I have not tested it with other themes or versions of Wordpress so therefore the challenges and/or issues mentioned is considered for this specific environment ONLY.*
 
 ## The Problem
 

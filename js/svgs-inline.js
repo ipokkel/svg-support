@@ -1,5 +1,21 @@
 jQuery(document).ready(function ($) {
 
+	// MODIFIED: 2017-08-12 // Theuns Coetzee (ipokkel)
+	// Added if option is active then addclass
+	if (PowerOverrideActive) {
+	// MODIFIED: 2017-08-02 // Theuns Coetzee (ipokkel)
+    // Find all svg inside img and add class if it hasn't got it
+	jQuery('img').each(function(){
+		// Pick only those with the extension we want
+		if( jQuery(this).attr('src').match(/\.(svg)/) ) {
+			// Add our class name
+			if ( !jQuery(this).hasClass(cssTarget.PowerOverride) ){
+				jQuery(this).addClass(cssTarget.PowerOverride);
+			}
+		}
+	});
+	}
+
 	// Polyfill to support all ye old browsers
 	// delete when not needed in the future
 	if (!String.prototype.endsWith) {
@@ -22,7 +38,9 @@ jQuery(document).ready(function ($) {
 	// End snippet to support IE11
 
 	// Check to see if user set alternate class
-	var target  = ( cssTarget !== 'img.' ? cssTarget : 'img.style-svg' );
+	// MODIFIED: 2017-08-12 // Theuns Coetzee (ipokkel)
+	// ORIGINAL: // var target  = ( cssTarget !== 'img.' ? cssTarget : 'img.style-svg' );
+	var target  = ( cssTarget.Bodhi !== 'img.' ? cssTarget.Bodhi : 'img.style-svg' );
 
 	$(target).each(function(index){
 		var $img = jQuery(this);
