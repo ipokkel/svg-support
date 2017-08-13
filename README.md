@@ -13,9 +13,9 @@ Modified version of the Wordpress plugin [**SVG Support**](https://wordpress.org
 1. This is a modified version of the [**SVG Support**](https://wordpress.org/plugins/svg-support/) plugin that is "Divi friendly".
 1. All credit to the original author of this plugin [**Benbodhi**](https://github.com/benbodhi)
 
->> This serves as reference and possible solution for those experience similar challenges and is not the stable plugin available in the Wordpress repository but a mimicked version thereof.
-
-> *The testing environment was WP 4.8. - 4.8.1 with a Divi Child theme (Divi v3.0.66 as parent theme), I have not tested it with other themes or versions of Wordpress so therefore the challenges and/or issues mentioned is considered for this specific environment ONLY.*
+> This serves as reference and possible solution for those experience similar challenges and is not the stable plugin available in the Wordpress repository but a mimicked version thereof.
+>
+>> *The testing environment was WP 4.8. - 4.8.1 with a Divi Child theme (Divi v3.0.66 as parent theme), I have not tested it with other themes or versions of Wordpress so therefore the challenges and/or issues mentioned is considered for this specific environment ONLY.*
 
 ## The Challenges
 
