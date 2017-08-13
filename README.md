@@ -110,9 +110,9 @@ svg-support *(plugin folder)*
 
 Go to the plugin settings and check
 
-[x] *Enable Advanced Mode* and save, when it reloads check the 
-[x] *Automatically insert class* and the 
-[x] *Power Override: Add class to all SVG's* options and save.
+- [x] *Enable Advanced Mode* and save, when it reloads check the 
+- [x] *Automatically insert class* and the 
+- [x] *Power Override: Add class to all SVG's* options and save.
 
 ## Final Note
 
