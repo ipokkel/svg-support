@@ -8,6 +8,12 @@ Modified version of the Wordpress plugin [**SVG Support**](https://wordpress.org
 1. **Power Override**. Checks all images on a page whether they have a svg file in the source and if the class isn't present adds it to the image.
     * Can be used when you use a visual builder theme or plugin, e.g. Divi, Divi Child Themes or Divi Builder plugin, that doesn't allow you to add a css class to an image in some cases
 
+### Update - 6 September 2017
+
+These modification have been tweaked and incorporated in the original plugin v.2.3.11 [**SVG Support**](https://wordpress.org/plugins/svg-support/) by the author [**Benbodhi**](https://github.com/benbodhi).  
+
+> Since 2.3.11, you can force all SVG files to be rendered inline with a single checkbox. Additionally, you can now choose whether to use the minified or expanded version of the JS file.
+
 #### Video Clip
 
 [![SVG Support - Modified for Divi](http://img.youtube.com/vi/pq4xPs0nPzY/0.jpg)](http://www.youtube.com/watch?v=pq4xPs0nPzY)
